@@ -1,5 +1,14 @@
-import C from './constants'
-import { v4 } from 'uuid'
+import { v4 } from 'uuid';
+import { createActions, handleActions, combineActions } from 'redux-actions';
+
+
+const C = {
+    ADD_COLOR: "ADD_COLOR",
+    RATE_COLOR: "RATE_COLOR",
+    REMOVE_COLOR: "REMOVE_COLOR",
+    SORT_COLORS: "SORT_COLORS"
+}
+
 
 export const addColor = (title, color) =>
     ({
